@@ -8,7 +8,7 @@ routes.get('/', async (req, res) => {
     // const reviews = await Reviews.find().lean()
 
     res.render('home', {
-        title: 'Normocard Clinic',
+        title: 'Normocard',
         isIndex: true,
         // reviews
     })
@@ -17,7 +17,7 @@ routes.get('/', async (req, res) => {
 routes.get('/doctor', async(req, res)=>{
 
     res.render('doctor', {
-        title: 'Normocard Clinic | Врачи',
+        title: 'Normocard | Врачи',
         isDoctor: true
     })
 })
@@ -26,7 +26,7 @@ routes.get('/doctor', async(req, res)=>{
 routes.get('/solobueva-anna-andreeva', async(req, res)=>{
 
     res.render('solobueva-anna-andreeva', {
-        title: 'Normocard Clinic | Солобуева Анна Андреевна',
+        title: 'Normocard | Солобуева Анна Андреевна',
         isAboutDoctor: true
     })
 })
@@ -34,7 +34,7 @@ routes.get('/solobueva-anna-andreeva', async(req, res)=>{
 routes.get('/bairacova-julia', async(req, res)=>{
 
     res.render('bairacova-julia', {
-        title: 'Normocard Clinic | Байракова Юлия Вячеславовна ',
+        title: 'Normocard | Байракова Юлия Вячеславовна ',
         isAboutDoctor: true
     })
 })
@@ -42,7 +42,7 @@ routes.get('/bairacova-julia', async(req, res)=>{
 routes.get('/svincova-elena-vladimirovna', async(req, res)=>{
 
     res.render('svincova-elena-vladimirovna', {
-        title: 'Normocard Clinic | Свинцова Елена Владимировна ',
+        title: 'Normocard | Свинцова Елена Владимировна ',
         isAboutDoctor: true
     })
 })
@@ -50,7 +50,7 @@ routes.get('/svincova-elena-vladimirovna', async(req, res)=>{
 routes.get('/zvereva-tatiana-nicolaevna', async(req, res)=>{
 
     res.render('zvereva-tatiana-nicolaevna', {
-        title: 'Normocard Clinic | Зверева Татьяна Николаевна ',
+        title: 'Normocard | Зверева Татьяна Николаевна ',
         isAboutDoctor: true
     })
 })
@@ -58,7 +58,7 @@ routes.get('/zvereva-tatiana-nicolaevna', async(req, res)=>{
 routes.get('/lebedeva-natalya-borisovna', async(req, res)=>{
 
     res.render('lebedeva-natalya-borisovna', {
-        title: 'Normocard Clinic | Лебедева Наталья Борисовна ',
+        title: 'Normocard | Лебедева Наталья Борисовна ',
         isAboutDoctor: true
     })
 })
@@ -66,7 +66,7 @@ routes.get('/lebedeva-natalya-borisovna', async(req, res)=>{
 routes.get('/rijenkova-svetlana-vladimirovna', async(req, res)=>{
 
     res.render('rijenkova-svetlana-vladimirovna', {
-        title: 'Normocard Clinic | Рыженкова Светлана Владимировна ',
+        title: 'Normocard | Рыженкова Светлана Владимировна ',
         isAboutDoctor: true
     })
 })
@@ -74,7 +74,7 @@ routes.get('/rijenkova-svetlana-vladimirovna', async(req, res)=>{
 routes.get('/homykova-tatiana-alecsandrova', async(req, res)=>{
 
     res.render('homykova-tatiana-alecsandrova', {
-        title: 'Normocard Clinic | Рыженкова Светлана Владимировна ',
+        title: 'Normocard | Рыженкова Светлана Владимировна ',
         isAboutDoctor: true
     })
 })
@@ -84,7 +84,7 @@ routes.get('/homykova-tatiana-alecsandrova', async(req, res)=>{
 routes.get('/services', async(req, res)=>{
 
     res.render('services', {
-        title: 'Normocard Clinic | Услуги ',
+        title: 'Normocard | Услуги ',
         isDoctor: true
     })
 })
@@ -94,7 +94,7 @@ routes.get('/services', async(req, res)=>{
 routes.get('/contact', async(req, res) =>{
 
     res.render('contact', {
-        title: 'Normocard Clinic | Контакты ',
+        title: 'Normocard | Контакты ',
         isContact: true
     })
 })
@@ -102,7 +102,7 @@ routes.get('/contact', async(req, res) =>{
 routes.get('/about', async(req, res) =>{
 
     res.render('about', {
-        title: 'Normocard Clinic О клинике',
+        title: 'Normocard | О клинике',
         isAbout: true
     })
 })
@@ -110,7 +110,7 @@ routes.get('/about', async(req, res) =>{
 routes.get('/cardio', async(req, res)=>{
 
     res.render('cardio', {
-        title: 'Normocard Clinic | Приём кардиолога',
+        title: 'Normocard | Приём кардиолога',
         isCardio: true
     })
 })
@@ -118,7 +118,7 @@ routes.get('/cardio', async(req, res)=>{
 routes.get('/rheumatologist', async(req, res)=>{
 
     res.render('rheumatologist', {
-        title: 'Normocard Clinic | Приём ревмотолога',
+        title: 'Normocard | Приём ревмотолога',
         isRheumatologist: true
     })
 })
@@ -126,7 +126,7 @@ routes.get('/rheumatologist', async(req, res)=>{
 routes.get('/pulmonologist', async(req, res)=>{
 
     res.render('pulmonologist', {
-        title: 'Normocard Clinic | Приём пульмонолога',
+        title: 'Normocard | Приём пульмонолога',
         isPulmonologis: true
     })
 })
@@ -134,7 +134,7 @@ routes.get('/pulmonologist', async(req, res)=>{
 routes.get('/therapist', async(req, res)=>{
 
     res.render('therapist', {
-        title: 'Normocard Clinic | Приём терапевта',
+        title: 'Normocard | Приём терапевта',
         isTherapist: true
     })
 })
@@ -142,7 +142,7 @@ routes.get('/therapist', async(req, res)=>{
 routes.get('/cardio-services', async(req,res)=>{
 
     res.render('cardio-services', {
-        title: 'Normocard Clinic | Кардиология',
+        title: 'Normocard | Кардиология',
         isCardioService: true
     })
 })
@@ -151,7 +151,7 @@ routes.get('/cardio-services', async(req,res)=>{
 routes.get('/rheumatologist-services', async(req,res)=>{
 
     res.render('rheumatologist-services', {
-        title: 'Normocard Clinic | Ревмотология',
+        title: 'Normocard | Ревмотология',
         isRheumatologistService: true
     })
 })
@@ -159,7 +159,7 @@ routes.get('/rheumatologist-services', async(req,res)=>{
 routes.get('/pulmonologist-services', async(req,res)=>{
 
     res.render('pulmonologist-services', {
-        title: 'Normocard Clinic | Пульмонология',
+        title: 'Normocard | Пульмонология',
         isPulmonologisttService: true
     })
 })
@@ -167,7 +167,7 @@ routes.get('/pulmonologist-services', async(req,res)=>{
 routes.get('/how-is-the-admission', async(req,res)=>{
 
     res.render('how-is-the-admission', {
-        title: 'Normocard Clinic | Как проходит прием ?',
+        title: 'Normocard | Как проходит прием ',
         isPulmonologisttService: true
     })
 })

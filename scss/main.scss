@@ -49,17 +49,26 @@ $font-famaly: 'Noto Serif', serif;
 
 	.nav-item >a {
 		color: #ffffff;
-		padding-right: 150px ;
+		padding-right: 150px;
+		margin-bottom: -8px;
 	}
 
 
 	.nav {
-		margin-left: 30px;
+		margin-left: 17px;
 	}
 
 	h2 {
 		color: #00356A;
-		margin-left: 30px;
+		margin-left: 17px;
+	}
+
+	.info-text-footer {
+		text-align: center;
+		width: 400px;
+		line-height: 28px;
+		color: #00356A;
+		margin-top: 60px;
 	}
 }
 
@@ -93,21 +102,20 @@ $font-famaly: 'Noto Serif', serif;
 	z-index: 2;
 	flex-wrap: wrap;
 	background-color:#EDF4F7;
-	// opacity: 0.7;
-
 
 	.logo {
 		height: 56px;
 		width: 280px;
 		display: flex;
 		justify-self: start;
+		margin-top: 6px;
 	}
 
 	.nav-item >a {
 		color: #3286AA;
-		font-size: 25px;
+		font-size: 20px;
 		background-color:#EDF4F7;
-		// opacity: 0.2;
+		margin-top: 8px;
 		cursor: pointer;
 	}
 
@@ -165,7 +173,7 @@ $font-famaly: 'Noto Serif', serif;
 		border: none;
 		// font-family: 'Comfortaa', cursive;
 		color: #ffff;
-		background-color: #91bbd1;
+		background-color: #2f55fd;
 		font-size: 20px;
 		border-radius: 4px;
 		box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
@@ -281,10 +289,19 @@ $font-famaly: 'Noto Serif', serif;
 
 	padding: 20px 0;
 
+	.head-about-doctor {
 
+		font-size: 24px;
+	}
+
+	.text-about-doctor {
+		font-size: 14px;
+		line-height: 24px;
+	}
 
 	.img-thumbnail{
 	height: 500px;
+	margin-top: 50px;
 	}
 }
 
@@ -475,6 +492,7 @@ $font-famaly: 'Noto Serif', serif;
 
 	display: flex;
 	min-height: 900px;
+	min-width: 500px;
 	background: url('/doctor.png')  center center/cover no-repeat;
 
 }
@@ -483,14 +501,15 @@ $font-famaly: 'Noto Serif', serif;
 
 .section-contact {
 	display: flex;
-	min-height: 900px;
+	min-height: 1200px;
+	min-width: 500px;
 	background: url('/contact2.jpg')  center center/cover no-repeat;
 }
 
 .section-recording {
 	display: flex;
 	min-height: 700px;
-	
+	min-width: 500px;
 }
 
 
@@ -914,6 +933,12 @@ position: relative;
 	opacity: 0.7;
 	}
 
+	.text-doctor-home{
+		color: #ffff;
+		text-align: center;
+		font-size: 23px;
+	}
+
 
 	.text-doctor{
 		margin-top: 90px;
@@ -924,14 +949,14 @@ position: relative;
 	}
 
 	.time-work{
-		margin-top: 15px;
+		margin-top: 20px;
 		margin-bottom: 5px;
-		color: #3286AA;
-		font-size: 15px;
+		color: #ffff;
+		font-size: 20px;
 		text-align: center;
 	}
 	.text-header{
-		color: #3286AA;
+		color: #00356A;
 		font-size: 20px;
 	}
 
@@ -1084,9 +1109,9 @@ position: relative;
 		}
 	
 		.contact-text{
-			font-size: 16px;
+			font-size: 20px;
 			text-align: center;
-			color: #3286AA;
+			color: #ffff;
 		}
 	
 		button > a {
@@ -1238,7 +1263,7 @@ h5
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 137px;
+  margin-bottom: 8em;
 }
 
 /* End Non-Essential  */
