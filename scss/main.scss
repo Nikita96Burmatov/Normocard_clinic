@@ -290,8 +290,8 @@ $font-famaly: 'Noto Serif', serif;
 	padding: 20px 0;
 
 	.head-about-doctor {
-
-		font-size: 24px;
+		margin-top: 46px;
+		font-size: 21px;
 	}
 
 	.text-about-doctor {
@@ -308,7 +308,7 @@ $font-famaly: 'Noto Serif', serif;
 .section-services {
 	display: flex;
 
-	min-height: 1200px;
+	min-height: 850px;
 	// background: url('/services.png') center center/cover no-repeat;
 
 }
@@ -323,7 +323,7 @@ $font-famaly: 'Noto Serif', serif;
 
 .section-cardio-services-page {
 	display: flex;
-	min-height: 900px;
+	min-height: 600px;
 }
 
 
@@ -343,7 +343,7 @@ $font-famaly: 'Noto Serif', serif;
 
 	.text-about{
 	font-size: 23px;
-	line-height: 52px;
+	line-height: 45px;
 	z-index: 2;
 	margin-top: 35px;
 	}
@@ -367,15 +367,15 @@ $font-famaly: 'Noto Serif', serif;
 		margin-top: 70px ;
 		margin-bottom: 5px;
 		color: #3286AA;
-		font-size: 35px;
+		font-size: 30px;
 		z-index: 2;
 	}
 
 	.text-page-info{
 		font-size: 23px;
-		line-height: 52px;
+		line-height: 45px;
 		z-index: 2;
-		margin-top: 35px;
+		margin-top: 30px;
 	}
 
 	.text-page-info >li {
@@ -399,7 +399,7 @@ $font-famaly: 'Noto Serif', serif;
 	}
 
 	.header-rheumatologist-info{
-		margin-top: 70px ;
+		margin-top: 60px ;
 		margin-bottom: 5px;
 		color: #3286AA;
 		font-size: 35px;
@@ -408,9 +408,9 @@ $font-famaly: 'Noto Serif', serif;
 
 	.text-rheumatologist-info{
 		font-size: 23px;
-		line-height: 52px;
+		line-height: 45px;
 		z-index: 2;
-		margin-top: 35px;
+		margin-top: 25px;
 	}
 
 	.text-rheumatologist-info >li {
@@ -425,7 +425,7 @@ $font-famaly: 'Noto Serif', serif;
 
 	.header-pulmonologist-page-info {
 		text-align: center;
-		margin-top: 70px ;
+		margin-top: 60px ;
 		margin-bottom: 5px;
 		color: #3286AA;
 		font-size: 35px;
@@ -433,7 +433,7 @@ $font-famaly: 'Noto Serif', serif;
 	}
 
 	.header-pulmonologist-info{
-		margin-top: 70px ;
+		margin-top: 60px ;
 		margin-bottom: 5px;
 		color: #3286AA;
 		font-size: 35px;
@@ -442,7 +442,7 @@ $font-famaly: 'Noto Serif', serif;
 
 	.text-pulmonologist-info{
 		font-size: 23px;
-		line-height: 52px;
+		line-height: 45px;
 		z-index: 2;
 		margin-top: 35px;
 	}
@@ -953,8 +953,8 @@ position: relative;
 		margin-bottom: 5px;
 		color: #ffff;
 		font-size: 20px;
-		text-align: center;
 	}
+
 	.text-header{
 		color: #00356A;
 		font-size: 20px;
@@ -962,9 +962,7 @@ position: relative;
 
 	h2 {
 		color: #00356A;
-		margin-top: 40px;
 		text-align: center;
-		margin-bottom: 27px;
 	}
 
 	h5 > button {
@@ -1098,7 +1096,6 @@ position: relative;
 		}
 	
 		h2{
-			margin-top: 60px;
 			margin-bottom: 60px;
 		}
 	
@@ -1149,12 +1146,13 @@ position: relative;
 		cursor: pointer;
 		border: none;
 		// font-family: 'Comfortaa', cursive;
-		color: #3286AA;
+		color: #ffff;
 		font-size: 20px;
 		border-radius: 4px;
 		box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
 		background: rgb(2,0,36);
 		background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(233, 222, 222, 0.5) 6%, rgba(255,255,255,0) 9%, rgba(222,222,222,0.5) 6%, rgba(255,255,255,0) 17%, rgba(222,222,222,0.5) 6%, rgba(255,255,255,0) 21%);
+		background-color: #00356A;
 		background-size: 150%;
 		background-position: right;
 		transition: 1s;
@@ -1165,7 +1163,7 @@ position: relative;
 
 	  .reviews-button:hover { 
 		background-position: left;
-		color: #3286AA;
+		color: #fff;
 		box-shadow: inset 0px 3px 5px rgb(189, 189, 189), 0px 0px 10px rgba(0,0,0,0.25);
 	}
 
@@ -1232,7 +1230,7 @@ position: relative;
 	}
 
 	.header {
-		font-size: 35px;
+		font-size: 30px;
 		color: #3286AA;
 	}
 

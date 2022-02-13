@@ -79,6 +79,14 @@ routes.get('/homykova-tatiana-alecsandrova', async(req, res)=>{
     })
 })
 
+routes.get('/smakotina-svetlana-anatolevna', async(req, res)=>{
+
+    res.render('smakotina-svetlana-anatolevna', {
+        title: 'Normocard | Смакотина Светлана Анатольевна ',
+        isAboutDoctor: true
+    })
+})
+
 
 
 routes.get('/services', async(req, res)=>{
