@@ -172,4 +172,12 @@ routes.get('/how-is-the-admission', async(req,res)=>{
     })
 })
 
+routes.get('/privacy', async(req,res)=>{
+
+    res.render('privacy', {
+        title: 'Normocard | Политики конфиденциальности ',
+        isPrivacy: true
+    })
+})
+
 export default routes
