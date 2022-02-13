@@ -39,6 +39,7 @@
 .nav_services .nav-item :hover {
   color: #00356A;
   cursor: pointer;
+  border-color: #00356A;
 }
 .nav_services .nav-item :hover {
   color: #00356A;
