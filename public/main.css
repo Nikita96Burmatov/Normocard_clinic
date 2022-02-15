@@ -1,9 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+*, *::before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content {
+  padding: 100px 0px 0px 0px;
+}
+
 .section-footer {
   background-color: #91bbd1;
-  display: flex;
   flex-wrap: wrap;
   min-width: 500px;
   bottom: 0;
@@ -16,9 +30,6 @@
   padding-right: 150px;
   margin-bottom: -8px;
 }
-.section-footer .nav {
-  margin-left: 17px;
-}
 .section-footer h2 {
   color: #00356A;
   margin-left: 17px;
@@ -29,6 +40,12 @@
   line-height: 28px;
   color: #00356A;
   margin-top: 60px;
+}
+
+.nav_menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .nav_services .nav-item > a {
@@ -46,57 +63,47 @@
   cursor: pointer;
 }
 
-.nav_menu {
-  display: flex;
+.navbar {
   position: fixed;
-  width: 100%;
-  justify-content: space-around;
-  z-index: 2;
-  flex-wrap: wrap;
-  background-color: #EDF4F7;
+  z-index: 50;
 }
-.nav_menu .logo {
-  height: 56px;
+.navbar .logo {
+  flex: 0 0 60px;
   width: 280px;
-  display: flex;
-  justify-self: start;
-  margin-top: 6px;
+  position: relative;
+  z-index: 5;
 }
-.nav_menu .nav-item > a {
-  color: #3286AA;
-  font-size: 20px;
-  background-color: #EDF4F7;
-  margin-top: 8px;
-  cursor: pointer;
+.navbar .logo > img {
+  max-width: 100%;
+  display: block;
 }
-.nav_menu .nav-item > a :hover {
+.navbar .nav-item > :hover {
   color: #00356A;
   cursor: pointer;
 }
-.nav_menu .dropdown {
+.navbar .dropdown {
   position: relative;
   display: inline-block;
 }
-.nav_menu .dropdown-content {
+.navbar .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  margin-top: 15px;
+  z-index: 3;
 }
-.nav_menu .dropdown-content > .nav-item {
+.navbar .dropdown-content > .nav-item {
   padding: 12px 16px;
   text-decoration: none;
 }
-.nav_menu .dropdown-content > a:hover {
+.navbar .dropdown-content > a:hover {
   background-color: #EDF4F7;
 }
-.nav_menu .dropdown:hover .dropdown-content {
+.navbar .dropdown:hover .dropdown-content {
   display: block;
   background-color: #EDF4F7;
 }
-.nav_menu .button {
+.navbar .button {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -117,13 +124,15 @@
   transition: 1s;
   margin-bottom: 10px;
   margin-top: 10px;
+  z-index: 3;
+  align-items: center;
 }
-.nav_menu .button:hover {
+.navbar .button:hover {
   background-position: left;
   color: #ffff;
   box-shadow: inset 0px 3px 5px #bdbdbd, 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
-.nav_menu .button:focus {
+.navbar .button:focus {
   outline: none;
 }
 
@@ -163,8 +172,8 @@
 
 .section-text {
   background-color: #fff;
-  display: flex;
   min-height: 900px;
+  min-width: 500px;
 }
 .section-text .header-how-is-the-admission-page-info {
   text-align: center;
@@ -192,14 +201,14 @@
 }
 
 .section {
-  display: flex;
   min-height: 400px;
   background-color: #fff;
   z-index: 2;
-  padding: 20px 0;
+  padding: 60px 0;
+  min-width: 500px;
 }
 .section .head-about-doctor {
-  margin-top: 46px;
+  margin-top: 64px;
   font-size: 21px;
 }
 .section .text-about-doctor {
@@ -212,24 +221,24 @@
 }
 
 .section-services {
-  display: flex;
   min-height: 850px;
+  min-width: 500px;
 }
 
 .section-services-page {
-  display: flex;
+  min-width: 500px;
   min-height: 900px;
   background: url("/services.png") center center/cover no-repeat;
 }
 
 .section-cardio-services-page {
-  display: flex;
   min-height: 600px;
+  min-width: 500px;
 }
 
 .section-about {
-  display: flex;
   min-height: 900px;
+  min-width: 500px;
 }
 .section-about .header-about {
   margin-top: 70px;
@@ -246,8 +255,8 @@
 }
 
 .section-cardio-info {
-  display: flex;
   min-height: 900px;
+  min-width: 500px;
 }
 .section-cardio-info .header-page-info {
   text-align: center;
@@ -275,7 +284,6 @@
 }
 
 .section-rheumatologist-info {
-  display: flex;
   min-height: 900px;
 }
 .section-rheumatologist-info .header-rheumatologist-page-info {
@@ -304,7 +312,6 @@
 }
 
 .section-pulmonologist-info {
-  display: flex;
   min-height: 900px;
 }
 .section-pulmonologist-info .header-pulmonologist-page-info {
@@ -333,7 +340,6 @@
 }
 
 .section-therapist-info {
-  display: flex;
   min-height: 900px;
 }
 .section-therapist-info .header-therapist-page-info {
@@ -362,22 +368,19 @@
 }
 
 .section-doctor {
-  display: flex;
   min-height: 900px;
   min-width: 500px;
   background: url("/doctor.png") center center/cover no-repeat;
 }
 
 .section-contact {
-  display: flex;
-  min-height: 1200px;
+  min-height: 800px;
   min-width: 500px;
   background: url("/contact2.jpg") center center/cover no-repeat;
 }
 
 .section-recording {
-  display: flex;
-  min-height: 700px;
+  min-height: 630px;
   min-width: 500px;
 }
 
@@ -717,9 +720,9 @@ hr {
   }
 }
 .container {
-  min-height: 400px;
-  min-width: 400px;
-  flex-wrap: wrap;
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px auto;
 }
 .container .header-card {
   padding: 0.5rem 1rem;
@@ -866,7 +869,6 @@ hr {
   margin-bottom: 60px;
 }
 .container .button {
-  margin-top: 55px;
   display: flex;
   justify-content: center;
 }
@@ -1001,7 +1003,8 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8em;
+  margin-bottom: 10em;
+  margin-top: 14px;
 }
 
 /* End Non-Essential  */
@@ -1022,7 +1025,7 @@ h5 {
   border-radius: 16px;
   overflow: hidden;
 }
-.property-card .property-image-hta {
+.property-card .property-image-sdv {
   height: 12em;
   width: 14em;
   padding: 1em 2em;
@@ -1031,11 +1034,11 @@ h5 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("/hta.jpg");
+  background-image: url("/sdv.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.property-card .property-description-hta {
+.property-card .property-description-sdv {
   background-color: #FAFAFC;
   height: 7em;
   width: 14em;
@@ -1097,7 +1100,7 @@ h5 {
   padding: 0.5em 1em;
   text-align: center;
 }
-.property-card .property-image-sev {
+.property-card .property-image-psa {
   height: 12em;
   width: 14em;
   padding: 1em 2em;
@@ -1106,11 +1109,11 @@ h5 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("/sev.jpg");
+  background-image: url("/psa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.property-card .property-description-sev {
+.property-card .property-description-psa {
   background-color: #FAFAFC;
   height: 7em;
   width: 14em;
@@ -1122,7 +1125,7 @@ h5 {
   padding: 0.5em 1em;
   text-align: center;
 }
-.property-card .property-image-shav {
+.property-card .property-image-htv {
   height: 12em;
   width: 14em;
   padding: 1em 2em;
@@ -1131,11 +1134,61 @@ h5 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("/shav.jpg");
+  background-image: url("/htv.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.property-card .property-description-shav {
+.property-card .property-description-htv {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-kaa {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/kaa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-kaa {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-iva {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/iva.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-iva {
   background-color: #FAFAFC;
   height: 7em;
   width: 14em;
@@ -1222,7 +1275,7 @@ h5 {
   padding: 0.5em 1em;
   text-align: center;
 }
-.property-card .property-image-rsn {
+.property-card .property-image-kin {
   height: 12em;
   width: 14em;
   padding: 1em 2em;
@@ -1231,11 +1284,11 @@ h5 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("/Photo_0049.jpg");
+  background-image: url("/kin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.property-card .property-description-rsn {
+.property-card .property-description-kin {
   background-color: #FAFAFC;
   height: 7em;
   width: 14em;
@@ -1266,21 +1319,39 @@ h5 {
   padding: 0px 1em;
 }
 
-.property-card:hover .property-image-sev {
+.property-card:hover .property-image-psa {
   height: 18em;
 }
 
-.property-card:hover .property-description-sev {
+.property-card:hover .property-description-psa {
   height: 0em;
   padding: 0px 1em;
 }
 
-.property-card:hover .property-description-shav {
+.property-card:hover .property-description-htv {
   height: 0em;
   padding: 0px 1em;
 }
 
-.property-card:hover .property-image-shav {
+.property-card:hover .property-image-htv {
+  height: 18em;
+}
+
+.property-card:hover .property-description-kaa {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-kaa {
+  height: 18em;
+}
+
+.property-card:hover .property-description-iva {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-iva {
   height: 18em;
 }
 
@@ -1311,20 +1382,20 @@ h5 {
   padding: 0px 1em;
 }
 
-.property-card:hover .property-image-rsn {
+.property-card:hover .property-image-kin {
   height: 18em;
 }
 
-.property-card:hover .property-description-rsn {
+.property-card:hover .property-description-kin {
   height: 0em;
   padding: 0px 1em;
 }
 
-.property-card:hover .property-image-hta {
+.property-card:hover .property-image-sdv {
   height: 18em;
 }
 
-.property-card:hover .property-description-hta {
+.property-card:hover .property-description-sdv {
   height: 0em;
   padding: 0px 1em;
 }

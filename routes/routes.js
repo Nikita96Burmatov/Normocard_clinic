@@ -39,9 +39,9 @@ routes.get('/bairacova-julia', async(req, res)=>{
     })
 })
 
-routes.get('/svincova-elena-vladimirovna', async(req, res)=>{
+routes.get('/pomeshnikova-svetlana-aleksandrovna', async(req, res)=>{
 
-    res.render('svincova-elena-vladimirovna', {
+    res.render('pomeshnikova-svetlana-aleksandrovna', {
         title: 'Normocard | Свинцова Елена Владимировна ',
         isAboutDoctor: true
     })

@@ -1,40 +1,48 @@
-<nav class="nav_menu">
-  <img src="pg_logo.png" alt="" class="logo">
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link" href="/">Главная</a>
-    </li>
-    <li class="dropdown nav-item ">
-      <a class="nav-link">Услуги</a>
+{{!-- <div class="container"> --}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav_menu">
+      <img src="pg_logo.png" alt="" class="logo">
+      <a class="navbar-brand" href="/">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Главная</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Услуги
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/cardio-services">Кардиология</a>
+              <a class="dropdown-item" href="/rheumatologist-services">Ревматология</a>
+              <a class="dropdown-item" href="/pulmonologist-services">Пульмонология</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#doctor">Врачи</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">О клинике</a>
+          </li>
 
-        <ul class="nav dropdown-content">
-          <li class="nav-item">
-            <a class="nav-link" href="/cardio-services">Кардиология</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/rheumatologist-services">Ревматология</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pulmonologist-services">Пульмонология</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Функциональная диагностика</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Терапия</a>
-          </li>
         </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#contact">Контакты</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#doctor">Врачи</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about">О клинике</a>
-    </li>
-  </ul>
-   <button type="submit" class="button">Запись к врачу</button>
-</nav>
+          {{!-- <button type="submit" class="button">Запись к врачу</button> --}}
+      </div>
+      
+    </nav>`
+</div>
+    
+  
+
+    
+
+
+
 

@@ -1,269 +1,357 @@
-{{>preloader}}
-{{>slider}}
-<section class="section-services">
-  <div class="container">
-	  <h2 class="pb-4">Услуги</h2>
-		{{>nav-services}}
-		<div class="accordion accordion-flush" id="accordionFlushExample">
-			<div id="flush-collapseOne" class="col-sm collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-			</div>
 
-			<div  id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-			</div>
-
-			<div  id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-			</div>
-
-			<div  id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-			</div>
-
-			<div  id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+<section class="section">
+<div class="content">	
+			<div class="container-fluid">
+					<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active"  data-bs-interval="1000">
+								<img class="d-block w-100" src="AI баннер 1900-870-01.jpg" alt="First slide">
+									{{!-- <button type="submit" class="button">Записаться на приём</button> --}}
+								</div>
+								<div class="carousel-item" data-bs-interval="1000">
+									<img class="d-block w-100" src="AI баннер 1900-870-02.jpg" alt="Second slide">
+								</div>
+								<div class="carousel-item" data-bs-interval="1000">
+									<img class="d-block w-100" src="AI баннер 1900-870-03.jpg" alt="Third slide">
+								</div>
+								<div class="carousel-item" data-bs-interval="1000">
+									<img class="d-block w-100" src="AI баннер 1900-870-04.jpg" alt="Four slide">
+								</div>
+							</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-  	</div>
+</section>
+
+
+<section class="section-services">
+	<div class="contant">
+		<div class="container">
+			<h2 class="pb-4">Услуги</h2>
+			{{>nav-services}}
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div id="flush-collapseOne" class="col-sm collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					</div>
+
+					<div  id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					</div>
+
+					<div  id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					</div>
+
+					<div  id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+					</div>
+
+					<div  id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+					</div>
+				</div>
+		</div>
+	</div>	
 </section>
 
 
 
 <section class="section-doctor">
-	<a name="doctor">
-	<div class="container">
-		<h2 class="mb-4">Врачи</h2>
-		<div class="row">
+	<div class="content">
+		<div class="container">
+			
+			<a name="doctor"></a>
+			<h2 class="mb-4">Врачи</h2>
+				<div class="row">
 
-		<p class="text-doctor-home">Познакомьтесь с нашими врачами заранее, чтобы спокойно выбрать своего специалиста.</p>
-		<h2 class="text-doctor-home">Узнайте о деятельности и уровне профессионализма наших специалистов.</h2>
+					<p class="text-doctor-home">Познакомьтесь с нашими врачами заранее, чтобы спокойно выбрать своего специалиста.</p>
+					<h2 class="text-doctor-home">Узнайте о деятельности и уровне профессионализма наших специалистов.</h2>
 
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/solobueva-anna-andreeva">
-						<div class="property-image-glav-vrach">
-							<div class="property-image-title">
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/solobueva-anna-andreeva">
+								<div class="property-image-glav-vrach">
+									<div class="property-image-title">
+									</div>
+								</div></a>
+								<div class="property-description-glav-vrach">
+								<h5>Солобуева Анна Андреевна</h5>
+								<p>Главный врач Медицинского центра</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
 							</div>
-						</div></a>
-						<div class="property-description-glav-vrach">
-						<h5>Солобуева Анна Андреевна</h5>
-						<p>Главный врач Медицинского центра</p>
 						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
 					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/bairacova-julia">
+								<div class="property-image-julia-bairacova">
+									<img src="/julbairakova.png" alt="">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-julia-bairacova">
+								<h5>Байракова Юлия Вячеславовна</h5>
+								<p>к. м. н. <br> Ревматолог, кардиолог.</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/lebedeva-natalya-borisovna">
+								<div class="property-image-lnb">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-lnb">
+								<h5>Лебедева Наталия Борисовна</h5>
+								<p>д.м.н, доцент <br> Врач - Кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/zvereva-tatiana-nicolaevna">
+								<div class="property-image-ztn">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-ztn">
+								<h5>Зверева Татьяна Николаевна</h5>
+								<p>к.м.н. доцент <br> Врач - кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/smakotina-svetlana-anatolevna">
+								<div class="property-image-ssa">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-ssa">
+								<h5>Cмакотина Светлана Анатольевна</h5>
+								<p>д. м. н., доцент <br> Врач-терапевт</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</a>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="/pomeshnikova-svetlana-aleksandrovna">
+								<div class="property-image-psa">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-psa">
+								<h5>Помешкина Светлана Александровна</h5>
+								<p>д.м.н., <br> врач - кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm pb-3">
+						<div class="center">
+							<div class="property-card">
+								<a href="#">
+								<div class="property-image-kin">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-kin">
+								<h5>Кушнир Ирина Николаевна</h5>
+								<p>ревматолог, кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm pb-3">
+						<div class="center">
+							<div class="property-card">
+								<a href="#">
+								<div class="property-image-sdv">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>
+								<div class="property-description-sdv">
+								<h5>Ситников Дмитрий Владимирович</h5>
+								<p>врач кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="#">
+								<div class="property-image-htv">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>s
+								<div class="property-description-htv">
+								<h5>Шофорусь Татьяна Владимировна</h5>
+								<p>Кардиолог, ревматолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="#">
+								<div class="property-image-kaa">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>s
+								<div class="property-description-kaa">
+								<h5>Казаченко Александр Александрович</h5>
+								<p>Врач - кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm card-bottom">
+						<div class="center">
+							<div class="property-card">
+								<a href="#">
+								<div class="property-image-iva">
+									<div class="property-image-title">
+									<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+									</div>
+								</div></a>s
+								<div class="property-description-iva">
+								<h5>Ионин Валерий Александрович</h5>
+								<p>Врач - кардиолог</p>
+								</div>
+								<a href="#">
+								<div class="property-social-icons">
+									<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
-
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/bairacova-julia">
-						<div class="property-image-julia-bairacova">
-							<img src="/julbairakova.png" alt="">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-julia-bairacova">
-						<h5>Байракова Юлия Вячеславовна</h5>
-						<p>к. м. н. <br> Ревматолог, кардиолог.</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/lebedeva-natalya-borisovna">
-						<div class="property-image-lnb">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-lnb">
-						<h5>Лебедева Наталия Борисовна</h5>
-						<p>д.м.н, доцент <br> Врач - Кардиолог</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/zvereva-tatiana-nicolaevna">
-						<div class="property-image-ztn">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-ztn">
-						<h5>Зверева Татьяна Николаевна</h5>
-						<p>к.м.н. доцент <br> Врач - кардиолог</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/smakotina-svetlana-anatolevna">
-						<div class="property-image-ssa">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-ssa">
-						<h5>Cмакотина Светлана Анатольевна</h5>
-						<p>д. м. н., доцент <br> Врач-терапевт</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</a>
-
-			{{!-- <div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="/svincova-elena-vladimirovna">
-						<div class="property-image-sev">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-sev">
-						<h5>Свинцова Елена Владимировна</h5>
-						<p>Врач функциональной диагностики</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm pb-3">
-				<div class="center">
-					<div class="property-card">
-						<a href="/rijenkova-svetlana-vladimirovna">
-						<div class="property-image-rsn">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-rsn">
-						<h5>Рыженкова Светлана Николаевна</h5>
-						<p>Врач функциональной диагностики</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm pb-3">
-				<div class="center">
-					<div class="property-card">
-						<a href="/homykova-tatiana-alecsandrova">
-						<div class="property-image-hta">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-hta">
-						<h5>Хомякова Татьяна Александровна</h5>
-						<p>Врач функциональной диагностики, к.м.н.</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm card-bottom">
-				<div class="center">
-					<div class="property-card">
-						<a href="#">
-						<div class="property-image-shav">
-							<div class="property-image-title">
-							<!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-							</div>
-						</div></a>
-						<div class="property-description-shav">
-						<h5>Шарова Ася Владимировна</h5>
-						<p>Медсестра процедурного кабинета</p>
-						</div>
-						<a href="#">
-						<div class="property-social-icons">
-							<!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-						</div>
-						</a>
-					</div>
-				</div>
-			</div> --}}
-
-		</div>
-
-
 		</div>
 	</div>
 </section>
 
 <section class="section">
-		
+	<div class="content">
+
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-					<h3>Отзывы</h3>
-                    {{!-- <p class="reviews">Никто ещё не оставлял отзывов</p> --}}
+			<h3>Отзывы</h3>
+			<div class="row">
+				
+				<div class="col-sm">
+
+					{{!-- <p class="reviews">Никто ещё не оставлял отзывов</p> --}}
 					<br>
 					<h3>Елена</h3>
-                    <p class="reviews">
+					<p class="reviews">
 
 					Очень добрые и отзывчивые врачи.
 					На приеме ответили на все интересующие вопросы, дали рекомендации. Спасибо вам большое от всей души!
 					</p>
-                </div>
+				</div>
 
-                <div class="col-sm">
+				<div class="col-sm">
 					<button type="button" class="reviews-button" data-toggle="modal" data-target="#exampleModal">Оставить отзыв</button>
-                </div>
+				</div>
 
-					<!-- Modal -->
+				<!-- Modal -->
 				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -287,93 +375,96 @@
 						</div>
 					</div>
 				</div>
-            </div>
+			</div>
+
         </div>
+	</div>	
 </section>
 
 <section class="section-contact">
-	<div class="container">
-	<a name="contact"><h2>Контакты</h2></a>
-		<p class="contact-text">Хотите у нас что-то уточнить? </p>
-		<p class="contact-text"> С удовольствием вам ответим, но только в рабочее время: </p>
-		<div class="row">
-			<div class="col-sm mt-5">
-				<h3 class="text-header mt-5">Позвоните нам</h3>
-				<p class="text-contact">Телефон: 8 (384) 290-09-35</p>
-				<h3 class="text-header mt-5">Напишите нам</h3>
-				<p class="text-contact">E-mail: clinic@normocard.com </p>
-				<h3 class="text-header mt-5">Посетите нас</h3>
-				<p class="text-contact">Адрес: г.Кемерово, ул. Гагарина, 49</p>
-				<p class="time-work">Часы работы : Пн-Пт: с 8:00 до 20:00</p>
-			</div>
+	<div class="content">
+		<div class="container">
+				<a name="contact"><h2>Контакты</h2></a>
+				<p class="contact-text">Хотите у нас что-то уточнить? </p>
+				<p class="contact-text"> С удовольствием вам ответим, но только в рабочее время: </p>
+				<div class="row">
+					<div class="col-sm mt-5">
+						<h3 class="text-header mt-5">Позвоните нам</h3>
+						<p class="text-contact">Телефон: 8 (384) 290-09-35</p>
+						<h3 class="text-header mt-5">Напишите нам</h3>
+						<p class="text-contact">E-mail: clinic@normocard.com </p>
+						<h3 class="text-header mt-5">Посетите нас</h3>
+						<p class="text-contact">Адрес: г.Кемерово, ул. Гагарина, 49</p>
+						<p class="time-work">Часы работы : Пн-Пт: с 8:00 до 20:00</p>
+					</div>
 
-			<div class="col-sm">
-				<div class="map-home">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ac4d11d40375373f5884cb62b51f38a2f19dee48333b7963ed352351f61fe1a&amp;source=constructor" width="562" height="415" frameborder="0"></iframe>
+					<div class="col-sm">
+						<div class="map-home">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ac4d11d40375373f5884cb62b51f38a2f19dee48333b7963ed352351f61fe1a&amp;source=constructor" width="562" height="415" frameborder="0"></iframe>
+						</div>
+					</div>
 				</div>
-			</div>
 		</div>
 	</div>
-
 </section>
 <section class="section-recording">
-	<div class="container">
-		<h2>Запись к врачу</h2>
-		<div class="row">
-			<div class="col-sm-4">
-				<h3 class="pb-3">Посещайте нас впервые ?</h3>
-				<img class="info-image" src="18-location-pin-outline.png" alt="">
-				<span class="info-title">Первое посещение</span>
-				<p class="info-text">
-					 	Если вы впервые записались на приём в нашу клинику,
-					 посмотрите в разделе «Контакты», как доехать до медцентра.
-				</p>
+	<div class="content">
+		<div class="container">
+			<h2>Запись к врачу</h2>
+			<div class="row">
+				<div class="col-sm">
+					<h3 class="pb-3">Посещайте нас впервые ?</h3>
+					<img class="info-image" src="18-location-pin-outline.png" alt="">
+					<span class="info-title">Первое посещение</span>
+					<p class="info-text">
+							Если вы впервые записались на приём в нашу клинику,
+						посмотрите в разделе «Контакты», как доехать до медцентра.
+					</p>
 
-				<img class="info-image" src="56-document-outline.png" alt="">
-				<span class="info-title">Что нужно для приёма ?</span>
-				<p class="info-text">
+					<img class="info-image" src="56-document-outline.png" alt="">
+					<span class="info-title">Что нужно для приёма ?</span>
+					<p class="info-text">
 
-					<br>
-						При первом посещении понадобится паспорт,
-					 чтобы заключить договор об оказании платных медицинских услуг.
+						<br>
+							При первом посещении понадобится паспорт,
+						чтобы заключить договор об оказании платных медицинских услуг.
 
-					<br>
-						Если имеются на руках анализы и исследования,
-						возьмите их с собой, чтобы показать врачу.
+						<br>
+							Если имеются на руках анализы и исследования,
+							возьмите их с собой, чтобы показать врачу.
 
 
-					<br> Желательно не принимать пищу не менее 4 часов до приёма.
-				</p>
+						<br> Желательно не принимать пищу не менее 4 часов до приёма.
+					</p>
+				</div>
+
+				<div class="col-sm">
+					<form class="form-home">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Фамилия и Имя *" required>
+							<small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш email *" required>
+							<small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще.</small>
+						</div>
+						<div class="form-group">
+							<label for="phoneNumber">Телефон</label>
+							<input type="tel" class="form-control" id="phoneNumber" placeholder="Ваш телефон" required>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных.</label>
+						</div>
+						<button type="submit" class="noselect">Записаться на приём</button>
+					</form>
+				</div>
 
 			</div>
-
-			<div class="col-sm-5">
-				<form class="form-home">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Фамилия и Имя *" required>
-						<small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще.</small>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Email</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш email *" required>
-						<small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще.</small>
-					</div>
-					<div class="form-group">
-						<label for="phoneNumber">Телефон</label>
-						<input type="tel" class="form-control" id="phoneNumber" placeholder="Ваш телефон" required>
-					</div>
-					<div class="form-check">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Согласен на обработку персональных данных.</label>
-					</div>
-					<button type="submit" class="noselect">Записаться на приём</button>
-				</form>
-			</div>
-
 		</div>
+
 	</div>
-
-
 </section>
 
 {{>footer}}
