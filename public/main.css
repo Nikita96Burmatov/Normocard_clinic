@@ -42,6 +42,13 @@ html, body {
   margin-top: 60px;
 }
 
+.section-slider {
+  min-height: 400px;
+  background-color: #fff;
+  z-index: 2;
+  min-width: 500px;
+}
+
 .nav_menu {
   display: flex;
   position: fixed;

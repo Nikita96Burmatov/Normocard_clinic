@@ -3,9 +3,8 @@ import Reviews from '../models/Reviews.js'
 
 const routes = Router();
 
-routes.get('/', async (req, res) => {
 
-    // const reviews = await Reviews.find().lean()
+routes.get('/', async (req, res) => {
 
     res.render('home', {
         title: 'Normocard',
@@ -185,6 +184,22 @@ routes.get('/privacy', async(req,res)=>{
     res.render('privacy', {
         title: 'Normocard | Политики конфиденциальности ',
         isPrivacy: true
+    })
+})
+
+routes.get('/zapis-na-priem', async(req,res)=>{
+
+    res.render('zapis-na-priem', {
+        title: 'Normocard | Запись на прием ',
+        isForm: true
+    })
+})
+
+routes.get('/cabinet', async(req,res)=>{
+
+    res.render('cabinet', {
+        title: 'Normocard | Личный кабинет ',
+        isCabinet: true
     })
 })
 
