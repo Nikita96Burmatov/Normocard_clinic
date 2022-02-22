@@ -20,10 +20,10 @@ const hbs = exphbs.create({
 
 
 
-const sslServer = Https.createServer({
-    key: fs.readFileSync(path.join('./', 'cert', 'key.pem')),
-    cert: fs.readFileSync(path.join('./', 'cert', 'cert.pem'))
-}, app)
+// const sslServer = Https.createServer({
+//     key: fs.readFileSync(path.join('./', 'cert', 'key.pem')),
+//     cert: fs.readFileSync(path.join('./', 'cert', 'cert.pem'))
+// }, app)
 
 app.use(routes) //регистрируем роут
 app.use(express.static(path.join('./', 'public'))) // подключаем статически стили
@@ -35,6 +35,7 @@ app.engine('hbs', hbs.engine) // регистриуем переменую с к
 app.set('view engine', 'hbs') // указываем что по умолчанию будем использовать handlebars
 app.set('views', 'views')
 
-sslServer.listen(PORT, () => {
-    console.log(`The server was started on the port ${PORT}`)
-});
+// sslServer.listen(PORT, () => {
+//     console.log(`The server was started on the port ${PORT}`)
+// });
+app.listen(3000)

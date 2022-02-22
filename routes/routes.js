@@ -1,10 +1,17 @@
 import  Router  from "express";
-import Reviews from '../models/Reviews.js'
+// import Reviews from '../models/Reviews.js'
 
 const routes = Router();
 
+// routes.get('/', function(req, res) {  
+//     res.redirect('https://' + req.headers.host + req.url);
+
+//     // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
+//     // res.redirect('https://example.com' + req.url);
+// })
 
 routes.get('/', async (req, res) => {
+
 
     res.render('home', {
         title: 'Normocard',
@@ -82,6 +89,36 @@ routes.get('/smakotina-svetlana-anatolevna', async(req, res)=>{
 
     res.render('smakotina-svetlana-anatolevna', {
         title: 'Normocard | Смакотина Светлана Анатольевна ',
+        isAboutDoctor: true
+    })
+})
+
+routes.get('/kazachenko-aleksandr-aleksandrovich', async(req, res)=>{
+
+    res.render('kazachenko-aleksandr-aleksandrovich', {
+        title: 'Normocard | Казаченко Александр Александрович ',
+        isAboutDoctor: true
+    })
+})
+
+routes.get('/sitnikov-dmitriy-vladimirovich', async(req, res)=>{
+
+    res.render('sitnikov-dmitriy-vladimirovich', {
+        title: 'Normocard | Ситников Дмитрий Владимирович ',
+        isAboutDoctor: true
+    })
+})
+routes.get('/shoforus-tatyana-vladimirovna', async(req, res)=>{
+
+    res.render('shoforus-tatyana-vladimirovna', {
+        title: 'Normocard | Шофорусь Татьяна Владимировна ',
+        isAboutDoctor: true
+    })
+})
+routes.get('/ionin-valeriy-aleksandrovich', async(req, res)=>{
+
+    res.render('ionin-valeriy-aleksandrovich', {
+        title: 'Normocard | Ионин Валерий Александрович ',
         isAboutDoctor: true
     })
 })
