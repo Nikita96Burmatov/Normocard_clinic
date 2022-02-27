@@ -1,14 +1,7 @@
 import  Router  from "express";
-// import Reviews from '../models/Reviews.js'
+
 
 const routes = Router();
-
-// routes.get('/', function(req, res) {  
-//     res.redirect('https://' + req.headers.host + req.url);
-
-//     // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
-//     // res.redirect('https://example.com' + req.url);
-// })
 
 routes.get('/', async (req, res) => {
 
@@ -48,7 +41,7 @@ routes.get('/bairacova-julia', async(req, res)=>{
 routes.get('/pomeshnikova-svetlana-aleksandrovna', async(req, res)=>{
 
     res.render('pomeshnikova-svetlana-aleksandrovna', {
-        title: 'Normocard | Свинцова Елена Владимировна ',
+        title: 'Normocard | Помешкина Светлана Александровна ',
         isAboutDoctor: true
     })
 })
@@ -80,7 +73,15 @@ routes.get('/rijenkova-svetlana-vladimirovna', async(req, res)=>{
 routes.get('/homykova-tatiana-alecsandrova', async(req, res)=>{
 
     res.render('homykova-tatiana-alecsandrova', {
-        title: 'Normocard | Рыженкова Светлана Владимировна ',
+        title: 'Normocard | Хомякова Татьяна Александровна ',
+        isAboutDoctor: true
+    })
+})
+
+routes.get('/svincova-elena-vladimirovna', async(req, res)=>{
+
+    res.render('svincova-elena-vladimirovna', {
+        title: 'Normocard | Свинцова Елена Владимировна',
         isAboutDoctor: true
     })
 })
@@ -122,14 +123,27 @@ routes.get('/ionin-valeriy-aleksandrovich', async(req, res)=>{
         isAboutDoctor: true
     })
 })
+routes.get('/kuleshova-darya-vladimirovna', async(req, res)=>{
 
+    res.render('kuleshova-darya-vladimirovna', {
+        title: 'Normocard | Кулешова Дарья Владимировна ',
+        isAboutDoctor: true
+    })
+})
 
+routes.get('/vasileva-vera-vladimirovna', async(req, res)=>{
 
-routes.get('/services', async(req, res)=>{
+    res.render('vasileva-vera-vladimirovna', {
+        title: 'Normocard | Васильева Вера Владимировна ',
+        isAboutDoctor: true
+    })
+})
 
-    res.render('services', {
-        title: 'Normocard | Услуги ',
-        isDoctor: true
+routes.get('/kusnir-irina-nikolaevna', async(req, res)=>{
+
+    res.render('kusnir-irina-nikolaevna', {
+        title: 'Normocard | Кушнир Ирина Николаевна  ',
+        isAboutDoctor: true
     })
 })
 

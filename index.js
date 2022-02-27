@@ -31,6 +31,7 @@ app.use(express.static('views/images'));
 app.use(express.urlencoded({extended: true}))
 
 
+
 app.engine('hbs', hbs.engine) // регистриуем переменую с ключом engine в express 1 параметр даем имя, 2 параметр указываем переменую с ключом engine
 app.set('view engine', 'hbs') // указываем что по умолчанию будем использовать handlebars
 app.set('views', 'views')

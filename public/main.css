@@ -1268,11 +1268,61 @@ h5 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url("/iva.jpg");
+  background-image: url("/iva2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .property-card .property-description-iva {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-kdv {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/kdv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-kdv {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-vvv {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/vvv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-vvv {
   background-color: #FAFAFC;
   height: 7em;
   width: 14em;
@@ -1384,6 +1434,81 @@ h5 {
   padding: 0.5em 1em;
   text-align: center;
 }
+.property-card .property-image-rsv {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/rsv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-rsv {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-hta {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/hta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-hta {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.property-card .property-image-sev {
+  height: 12em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("/sev.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.property-card .property-description-sev {
+  background-color: #FAFAFC;
+  height: 7em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
 
 .property-card:hover .property-image-glav-vrach {
   height: 18em;
@@ -1439,6 +1564,24 @@ h5 {
   height: 18em;
 }
 
+.property-card:hover .property-description-kdv {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-kdv {
+  height: 18em;
+}
+
+.property-card:hover .property-description-vvv {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-vvv {
+  height: 18em;
+}
+
 .property-card:hover .property-image-lnb {
   height: 18em;
 }
@@ -1480,6 +1623,33 @@ h5 {
 }
 
 .property-card:hover .property-description-sdv {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-rsv {
+  height: 18em;
+}
+
+.property-card:hover .property-description-rsv {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-hta {
+  height: 18em;
+}
+
+.property-card:hover .property-description-hta {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image-sev {
+  height: 18em;
+}
+
+.property-card:hover .property-description-sev {
   height: 0em;
   padding: 0px 1em;
 }
