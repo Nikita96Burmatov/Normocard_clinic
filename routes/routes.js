@@ -62,10 +62,10 @@ routes.get('/lebedeva-natalya-borisovna', async(req, res)=>{
     })
 })
 
-routes.get('/rijenkova-svetlana-vladimirovna', async(req, res)=>{
+routes.get('/rijenkova-svetlana-nikolaevna', async(req, res)=>{
 
-    res.render('rijenkova-svetlana-vladimirovna', {
-        title: 'Normocard | Рыженкова Светлана Владимировна ',
+    res.render('rijenkova-svetlana-nikolaevna', {
+        title: 'Normocard | Рыженкова Светлана Николаевна ',
         isAboutDoctor: true
     })
 })

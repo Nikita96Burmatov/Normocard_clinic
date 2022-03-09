@@ -72,7 +72,7 @@ html, body {
 }
 
 .bg-light {
-  background-color: #fff !important;
+  background-color: #1b8d87 !important;
 }
 
 .navbar {
@@ -81,14 +81,18 @@ html, body {
 }
 .navbar .logo {
   flex: 0 0 60px;
-  width: 90px;
+  width: 160px;
   position: relative;
   z-index: 5;
   margin-left: 10px;
+  margin-right: 303px;
 }
 .navbar .logo > img {
   max-width: 100%;
   display: block;
+}
+.navbar .nav-item .nav-link {
+  color: #ffff;
 }
 .navbar .nav-item > :hover {
   color: #00356A;
@@ -128,7 +132,7 @@ html, body {
   cursor: pointer;
   border: none;
   color: #ffff;
-  background-color: #2bb8ba;
+  background-color: #be1623;
   font-size: 20px;
   border-radius: 4px;
   box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -1787,6 +1791,15 @@ h5 {
 }
 
 @media screen and (max-width: 450px) {
+  .navbar .logo {
+    flex: 0 0 60px;
+    width: 90px;
+    position: relative;
+    z-index: 5;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
   .button-mobile {
     display: block;
   }
